@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Edu Words</string>
+    <string name="action_settings">Settings</string>
+    <string name="etykieta_test">Test</string>
+    <string name="etykieta_opis">Description</string>
+    <string name="etykieta_autor">Author</string>
+    <string name="etykieta_wyjscie">Exit</string>
+    <string name="tekst_opis">This app is about how to learn words by heart. You will use a special website to write your words</string>
+    <string name="tytul_opis">About app</string>
+    <string name="tytul_test">Test</string>
+    <string name="edit_test">Put word</string>
+    <string name="button_test">OK</string>
+    <string name="hello_text">Hello</string>
+    <string name="title_activity_po_tescie">Po Tescie</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tlo">#33B5E5</color>
+
+    <string name="app_name">BMI</string>
+    <string name="action_settings">Settings</string>
+    <string name="naglowek_waga">Weight:</string>
+    <string name="naglowek_wzrost">Height:</string>
+    <string name="edit_waga">Please enter your weight</string>
+    <string name="edit_wzrost">Please enter your height</string>
+    <string name="przycisk_licz">Calculate</string>
+    <string name="title_activity_wynik">Wynik</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

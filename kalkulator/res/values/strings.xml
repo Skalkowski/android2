@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">kalkulator</string>
+    <string name="action_settings">Settings</string>
+	<string name="billTextView">Bill</string>
+	<string name="billEditText">0.0</string>
+	<string name="tipTextView">Tip</string>
+	<string name="tipEditText">.15</string>
+	<string name="finalBillTextView">Bill</string>
+	<string name="finalBillEditText">0.0</string>
+	<string name="changeTipTextView">Tip</string>
+</resources>
