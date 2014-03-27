@@ -6,6 +6,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 public class Calculate extends Activity {
 
@@ -20,6 +21,8 @@ public class Calculate extends Activity {
 	EditText distanceET;
 	EditText timeET;
 	EditText speedET;
+	
+	Spinner spinnerek;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,9 +42,11 @@ public class Calculate extends Activity {
 		distanceET = (EditText) findViewById(R.id.distanceEditText);
 		timeET = (EditText) findViewById(R.id.timeEditText);
 		speedET = (EditText) findViewById(R.id.speedEditText);
+		spinnerek = (Spinner) findViewById(R.id.distanceSpinner);
 
 		distanceET.addTextChangedListener(distanceListener);
 		timeET.addTextChangedListener(timeListener);
+		
 	}
 
 	private TextWatcher timeListener = new TextWatcher() {
@@ -104,6 +109,19 @@ public class Calculate extends Activity {
 	private void updateSpeedByDistance() {
 		try {
 			double time = Double.parseDouble(timeET.getText().toString());
+			
+			spinnerek = (Spinner) findViewById(R.id.distanceSpinner);
+			String test = spinnerek.getSelectedItem().toString(); 
+			
+			if (test.equals("Kilometers")){
+				distanceD = distanceD * 1000;
+			}
+			else if (test.equals("Miles")) {
+				distanceD = distanceD * 0.621371192;
+			}
+			
+			else{}
+			
 
 			double score = distanceD / time;
 
@@ -116,9 +134,22 @@ public class Calculate extends Activity {
 	private void updateSpeedByTime() {
 		try {
 			double distance = Double.parseDouble(distanceET.getText().toString());
-
+			
+			
+			spinnerek = (Spinner) findViewById(R.id.distanceSpinner);
+			String test = spinnerek.getSelectedItem().toString(); 
+			
+			if (test.equals("Kilometers")){
+				distance = distance * 1000;
+			}
+			else if (test.equals("Miles")) {
+				distance = distance * 0.621371192;
+			}
+			
+			else{}
+			
 			double score = distance / timeD;
-
+		
 			speedET.setText(String.valueOf(score));
 		} catch (NumberFormatException e) {
 			speedET.setText("dupa");
